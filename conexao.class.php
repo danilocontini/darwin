@@ -13,6 +13,7 @@ class Conexao extends PDO {
         if(!isset( self::$instancia )){
             try {
                 self::$instancia = new Conexao("mysql:host=localhost;dbname=darwin", "root", "Own@12345");
+                self::$instancia = new Conexao("mysql:host=localhost;dbname=darwin", "root", "Dc182410");
             } catch ( Exception $e ) {
                 echo 'Erro ao conectar com o banco de dados!';
                 exit ();
